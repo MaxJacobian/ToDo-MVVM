@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B4B60AB225EEA0600041046A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B60AB125EEA0600041046A /* AppDelegate.swift */; };
 		B4B60AB425EEA0600041046A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B60AB325EEA0600041046A /* SceneDelegate.swift */; };
-		B4B60AB625EEA0600041046A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B60AB525EEA0600041046A /* ViewController.swift */; };
 		B4B60AB925EEA0600041046A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B60AB725EEA0600041046A /* Main.storyboard */; };
 		B4B60ABB25EEA0670041046A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B60ABA25EEA0670041046A /* Assets.xcassets */; };
-		B4B60ABE25EEA0670041046A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B60ABC25EEA0670041046A /* LaunchScreen.storyboard */; };
+		B4B60AD025EEA1C20041046A /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B60ACF25EEA1C20041046A /* Persistance.swift */; };
+		B4B60AD525EEA26D0041046A /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B60AD425EEA26D0041046A /* MainTableViewController.swift */; };
+		B4B60ADC25EEABAE0041046A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B60ADB25EEABAE0041046A /* ViewModel.swift */; };
+		D35980F7CCDC7D667A1BD00B /* Pods_ToDo_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB35CE8EB56A49DEACC565A3 /* Pods_ToDo_MVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54C4AC3C27672E08A25D3A8E /* Pods-ToDo-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-ToDo-MVVM/Pods-ToDo-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B60AAE25EEA0600041046A /* ToDo-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B60AB125EEA0600041046A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4B60AB325EEA0600041046A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4B60AB525EEA0600041046A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B4B60AB825EEA0600041046A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4B60ABA25EEA0670041046A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B4B60ABD25EEA0670041046A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4B60ABF25EEA0670041046A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4B60ACF25EEA1C20041046A /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		B4B60AD425EEA26D0041046A /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		B4B60ADB25EEABAE0041046A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BFA400CAB22F3723BB856358 /* Pods-ToDo-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo-MVVM.release.xcconfig"; path = "Target Support Files/Pods-ToDo-MVVM/Pods-ToDo-MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		FB35CE8EB56A49DEACC565A3 /* Pods_ToDo_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDo_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35980F7CCDC7D667A1BD00B /* Pods_ToDo_MVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0835B4D4E05E7841ED54C1CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB35CE8EB56A49DEACC565A3 /* Pods_ToDo_MVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FBE9C1115DD646998BFAD93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54C4AC3C27672E08A25D3A8E /* Pods-ToDo-MVVM.debug.xcconfig */,
+				BFA400CAB22F3723BB856358 /* Pods-ToDo-MVVM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B4B60AA525EEA0600041046A = {
 			isa = PBXGroup;
 			children = (
 				B4B60AB025EEA0600041046A /* ToDo-MVVM */,
 				B4B60AAF25EEA0600041046A /* Products */,
+				2FBE9C1115DD646998BFAD93 /* Pods */,
+				0835B4D4E05E7841ED54C1CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +84,11 @@
 			children = (
 				B4B60AB125EEA0600041046A /* AppDelegate.swift */,
 				B4B60AB325EEA0600041046A /* SceneDelegate.swift */,
-				B4B60AB525EEA0600041046A /* ViewController.swift */,
+				B4B60ACF25EEA1C20041046A /* Persistance.swift */,
+				B4B60ADB25EEABAE0041046A /* ViewModel.swift */,
+				B4B60AD425EEA26D0041046A /* MainTableViewController.swift */,
 				B4B60AB725EEA0600041046A /* Main.storyboard */,
 				B4B60ABA25EEA0670041046A /* Assets.xcassets */,
-				B4B60ABC25EEA0670041046A /* LaunchScreen.storyboard */,
 				B4B60ABF25EEA0670041046A /* Info.plist */,
 			);
 			path = "ToDo-MVVM";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4B60AC225EEA0670041046A /* Build configuration list for PBXNativeTarget "ToDo-MVVM" */;
 			buildPhases = (
+				DC8716957903101AC4E44C4C /* [CP] Check Pods Manifest.lock */,
 				B4B60AAA25EEA0600041046A /* Sources */,
 				B4B60AAB25EEA0600041046A /* Frameworks */,
 				B4B60AAC25EEA0600041046A /* Resources */,
+				5DFABA07B6BEF7E25F278355 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,7 +153,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B60ABE25EEA0670041046A /* LaunchScreen.storyboard in Resources */,
 				B4B60ABB25EEA0670041046A /* Assets.xcassets in Resources */,
 				B4B60AB925EEA0600041046A /* Main.storyboard in Resources */,
 			);
@@ -132,12 +160,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DFABA07B6BEF7E25F278355 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDo-MVVM/Pods-ToDo-MVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDo-MVVM/Pods-ToDo-MVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToDo-MVVM/Pods-ToDo-MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC8716957903101AC4E44C4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDo-MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4B60AAA25EEA0600041046A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B60AB625EEA0600041046A /* ViewController.swift in Sources */,
+				B4B60ADC25EEABAE0041046A /* ViewModel.swift in Sources */,
+				B4B60AD525EEA26D0041046A /* MainTableViewController.swift in Sources */,
+				B4B60AD025EEA1C20041046A /* Persistance.swift in Sources */,
 				B4B60AB225EEA0600041046A /* AppDelegate.swift in Sources */,
 				B4B60AB425EEA0600041046A /* SceneDelegate.swift in Sources */,
 			);
@@ -152,14 +224,6 @@
 				B4B60AB825EEA0600041046A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B4B60ABC25EEA0670041046A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4B60ABD25EEA0670041046A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,6 +347,7 @@
 		};
 		B4B60AC325EEA0670041046A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54C4AC3C27672E08A25D3A8E /* Pods-ToDo-MVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +367,7 @@
 		};
 		B4B60AC425EEA0670041046A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA400CAB22F3723BB856358 /* Pods-ToDo-MVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
