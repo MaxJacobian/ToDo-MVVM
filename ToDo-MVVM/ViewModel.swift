@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-class Model {
+class ViewModel {
     
     var id = 0
     var target: [Target] = []
@@ -18,7 +18,7 @@ class Model {
         target = Persistance.shared.loadedTargets()
     }
     
-    func createTarget()->UIAlertController{
+    func createTarget(tableView: UITableView)->UIAlertController{
         let alertController = UIAlertController(title: "New task", message: "Enter your task", preferredStyle: .alert)
             let saveTask = UIAlertAction(title: "Save", style: .default) { [self]action in
                 let tf = alertController.textFields?.first
@@ -26,6 +26,7 @@ class Model {
                     target.append(Target.setTarget(id: id, task: newTask))
                     id += 1
                     Persistance.shared.add(target: target)
+                    tableView.reloadData()
                 }
             }
             let cancelAction = UIAlertAction(title: "Cancel", style: .default){_ in}
@@ -35,7 +36,9 @@ class Model {
             return alertController
 
     }
-    func removeTarget(idRemove: Int) {
+    func removeTarget(idRemove: Int, tableView: UITableView) {
         Persistance.shared.removeTarget(idRemove: idRemove)
+        target.remove(at: idRemove)
+        tableView.reloadData()
     }
 }
